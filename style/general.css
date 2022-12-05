@@ -10,10 +10,12 @@ main{
   background-color: #1d2d3c;
 }
 .mc-card{
+  position: relative;
   background-color: #112030;
   height: 330px;
   width: 265px;
   color: white;
+  
 }
 .img-box{
   height: 180px;
@@ -23,7 +25,22 @@ img{
   width: 100%;
 }
 
-
+.extraInfo{
+  
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: #000000da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
 /* ////////////////////////////////// */

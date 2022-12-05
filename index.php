@@ -24,7 +24,7 @@
 <body>
   <header>
     
-    </header>
+  </header>
     
     
     <div id="app">
@@ -35,24 +35,34 @@
           
           <div
           v-for="(disc, index) in discs" :key="index"
+          @click="toggleWindow(index)"
           class="mc-card col-3 mx-5 my-5 d-flex flex-column   justify-content-center align-items-center">
-          <div class="img-box">
-                <img :src="disc.poster" :alt="disc.author">
-              </div>
-              <div class="text-area text-center">
+          <div 
+          v-if="isToggled && active === index"
+          class="extraInfo">
+                <div class="img-box">
+                  <img :src="disc.poster" :alt="disc.author">
+                </div>
                 <p>{{disc.title}}</p>
                 <p>{{disc.author}}</p>
                 <p>{{disc.year}}</p>
-              </div>
+                <p>{{disc.genre}}</p>
+            </div>
+            <div class="img-box">
+                <img :src="disc.poster" :alt="disc.author">
+            </div>
+            <div class="text-area text-center">
+                <p>{{disc.title}}</p>
+                <p>{{disc.author}}</p>
+                <p>{{disc.year}}</p>
+            </div>
+           
             </div>
           </div>
           
-  
 
-
-
-</main>
-</div>
+      </main>
+    </div>
 
 
 
