@@ -1,11 +1,13 @@
+
+
 header{
   height: 90px;
   background-color: #06131f;
 }
 
 main{
-  height: calc(100vh - 90px);
-  background: #1d2d3c;
+  height: 100%;
+  background-color: #1d2d3c;
 }
 .mc-card{
   background-color: #112030;
@@ -15,10 +17,15 @@ main{
 }
 .img-box{
   height: 180px;
-  width: 180px;
+  max-width: 180px;
 }
 img{
-  height: 180px;
-  width: 180px;
-  
+  width: 100%;
 }
+
+
+
+
+/* ////////////////////////////////// */
+
+
